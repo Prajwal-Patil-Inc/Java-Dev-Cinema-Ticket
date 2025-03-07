@@ -32,7 +32,7 @@ This repository contains a solution for a cinema ticket purchase service. The `T
    ```bash
    mvn test
    
-This will execute the test cases for the TicketServiceImpl class using JUnit 5 and Mockito to verify valid and invalid ticket purchases.
+   This will execute the test cases for the TicketServiceImpl class using JUnit 5 and Mockito to verify valid and invalid ticket purchases.
 
 2. **Test results**: The test results will be shown in the terminal or in the target/surefire-reports directory.
 
@@ -48,5 +48,5 @@ This will execute the test cases for the TicketServiceImpl class using JUnit 5 a
    ticketService.purchaseTickets(accountId, adultTicket, childTicket);
 
 3. **Test cases are provided for various scenarios, such as:**
-- Valid ticket purchases with combinations of adult, child, and infant tickets
-- Invalid purchases like exceeding the ticket limit or missing adult tickets
+   - Valid ticket purchases with combinations of adult, child, and infant tickets
+   - Invalid purchases like exceeding the ticket limit or missing adult tickets
