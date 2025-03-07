@@ -5,6 +5,7 @@ import org.junit.Test;
 
 import thirdparty.paymentgateway.TicketPaymentService;
 import thirdparty.seatbooking.SeatReservationService;
+import uk.gov.dwp.uc.pairtest.TicketService;
 import uk.gov.dwp.uc.pairtest.TicketServiceImpl;
 import uk.gov.dwp.uc.pairtest.domain.TicketTypeRequest;
 import uk.gov.dwp.uc.pairtest.domain.TicketTypeRequest.Type;
@@ -13,7 +14,7 @@ import uk.gov.dwp.uc.pairtest.exception.InvalidPurchaseException;
 public class TicketServiceImplTest {
     private final TicketPaymentService paymentService = mock(TicketPaymentService.class);
     private final SeatReservationService reservationService = mock(SeatReservationService.class);
-    private final TicketServiceImpl ticketService = new TicketServiceImpl(paymentService, reservationService);
+    private final TicketService ticketService = new TicketServiceImpl(paymentService, reservationService);
     
     @Test
     public void testValidPurchase1(){
