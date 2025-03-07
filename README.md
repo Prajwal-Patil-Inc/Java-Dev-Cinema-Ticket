@@ -6,7 +6,7 @@ This repository contains a solution for a cinema ticket purchase service. The `T
 - Validates account ID
 - Ensures a maximum of 25 tickets can be purchased at once
 - Enforces the rule that child or infant tickets cannot be purchased without an adult ticket
-- Calculates total ticket amount and reserves the required number of seats
+- Calculates total ticket amount and the required number of seats
 - Supports adult, child, and infant ticket types
 
 ## Requirements
@@ -41,8 +41,8 @@ This repository contains a solution for a cinema ticket purchase service. The `T
 
 2. **Purchase tickets by calling the purchaseTickets method:**
    ```java
-   TicketTypeRequest adultTicket = new TicketTypeRequest(TicketType.ADULT, 2);
-   TicketTypeRequest childTicket = new TicketTypeRequest(TicketType.CHILD, 1);
+   TicketTypeRequest adultTicket = new TicketTypeRequest(Type.ADULT, 2);
+   TicketTypeRequest childTicket = new TicketTypeRequest(Type.CHILD, 1);
    ticketService.purchaseTickets(accountId, adultTicket, childTicket);
 
 3. **Test cases are provided for various scenarios, such as:**
