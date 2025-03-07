@@ -31,8 +31,6 @@ This repository contains a solution for a cinema ticket purchase service. The `T
 1. **Run the tests using Maven**:
    ```bash
    mvn test
-   
-   This will execute the test cases for the TicketServiceImpl class using JUnit 5 and Mockito to verify valid and invalid ticket purchases.
 
 2. **Test results**: The test results will be shown in the terminal or in the target/surefire-reports directory.
 
