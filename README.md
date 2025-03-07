@@ -37,14 +37,14 @@ This will execute the test cases for the TicketServiceImpl class using JUnit 5 a
 
 ## How to Use the Service
 1. **Create an instance of TicketServiceImpl:**
-```java
-TicketService ticketService = new TicketServiceImpl(paymentService, seatReservationService);
+   ```java
+   TicketService ticketService = new TicketServiceImpl(paymentService, seatReservationService);
 
 2. **Purchase tickets by calling the purchaseTickets method:**
-```java
-TicketTypeRequest adultTicket = new TicketTypeRequest(TicketType.ADULT, 2);
-TicketTypeRequest childTicket = new TicketTypeRequest(TicketType.CHILD, 1);
-ticketService.purchaseTickets(accountId, adultTicket, childTicket);
+   ```java
+   TicketTypeRequest adultTicket = new TicketTypeRequest(TicketType.ADULT, 2);
+   TicketTypeRequest childTicket = new TicketTypeRequest(TicketType.CHILD, 1);
+   ticketService.purchaseTickets(accountId, adultTicket, childTicket);
 
 3. **Test cases are provided for various scenarios, such as:**
 - Valid ticket purchases with combinations of adult, child, and infant tickets
