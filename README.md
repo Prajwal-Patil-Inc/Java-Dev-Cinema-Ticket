@@ -21,7 +21,7 @@ This repository contains a solution for a cinema ticket purchase service. The `T
 
 2. **Navigate to the project directory**:
    ```bash
-   cd Java-Dev-Cinema-Ticket
+   cd cinema-tickets-java
 
 3. **Build the project using Maven**:
    ```bash
